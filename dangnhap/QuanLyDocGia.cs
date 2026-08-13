@@ -11,9 +11,10 @@ namespace dangnhap
         public QuanLyDocGia()
         {
             InitializeComponent();
+            HienThiDanhSachDocGia();
         }
         //Khai bao chuoi ket noi
-        string strCon = @"Data Source=embemilo;Initial Catalog=qldg;Integrated Security=True;Encrypt=False";
+        string strCon = @"Data Source=.\SQLEXPRESS;Initial Catalog=QuanLySach;Integrated Security=True;Encrypt=False";
 
         //Khai bao doi tuong ket noi
         SqlConnection sqlCon = null;
@@ -219,10 +220,6 @@ namespace dangnhap
                 return false;
             }
         }
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnThêm_Click(object sender, EventArgs e)
         {
@@ -265,160 +262,6 @@ namespace dangnhap
             txtMaDG.Enabled = false;
         }
 
-        private void btnLuu_Click(object sender, EventArgs e)
-        {
-            string maDG = txtMaDG.Text.Trim();
-
-            string tenDG =txtTenDG.Text.Trim();
-
-            string gioiTinh =cbbGioiTinh.Text.Trim();
-
-            string ngaySinh =dtpNgaySinh.Value.ToString("yyyy-MM-dd");
-
-            string sdt =txtSĐT.Text.Trim();
-
-            string diaChi =txtDiaChi.Text.Trim();
-
-
-            // Kiểm tra mã
-            if (maDG == "")
-            {
-                MessageBox.Show(
-                    "Vui lòng nhập mã độc giả!");
-
-                txtMaDG.Focus();
-
-                return;
-            }
-
-
-            // Kiểm tra tên
-            if (tenDG == "")
-            {
-                MessageBox.Show(
-                    "Vui lòng nhập tên độc giả!");
-
-                txtTenDG.Focus();
-
-                return;
-            }
-
-
-            // Kiểm tra giới tính
-            if (gioiTinh == "")
-            {
-                MessageBox.Show(
-                    "Vui lòng chọn giới tính!");
-
-                cbbGioiTinh.Focus();
-
-                return;
-            }
-
-
-            // Kiểm tra số điện thoại
-            if (sdt == "")
-            {
-                MessageBox.Show(
-                    "Vui lòng nhập số điện thoại!");
-
-                txtSĐT.Focus();
-
-                return;
-            }
-
-
-            // Kiểm tra địa chỉ
-            if (diaChi == "")
-            {
-                MessageBox.Show(
-                    "Vui lòng nhập địa chỉ!");
-
-                txtDiaChi.Focus();
-
-                return;
-            }
-
-
-            // Tạo danh sách độc giả
-            List<string> docGia =
-                new List<string>();
-
-            docGia.Add(maDG);
-            docGia.Add(tenDG);
-            docGia.Add(gioiTinh);
-            docGia.Add(ngaySinh);
-            docGia.Add(sdt);
-            docGia.Add(diaChi);
-            //Thêm mới độc giả
-
-            if (luuChon == 1)
-            {
-                bool kq =
-                    ThemMoiDocGia(docGia);
-
-                if (kq == true)
-                {
-                    MessageBox.Show(
-                        "Thêm độc giả thành công!",
-                        "Thông báo",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Information);
-
-                    HienThiDanhSachDocGia();
-                }
-                else
-                {
-                    MessageBox.Show(
-                        "Thêm độc giả không thành công!");
-                }
-            }
-        }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            if (vt == -1)
-            {
-                MessageBox.Show(
-                    "Vui lòng chọn độc giả cần xóa!");
-
-                return;
-            }
-
-            DialogResult result =
-                MessageBox.Show(
-                    "Bạn có thực sự muốn xóa độc giả này không?",
-                    "Xác nhận xóa",
-                    MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Warning);
-
-            if (result == DialogResult.Yes)
-            {
-                bool kq = XoaDocGia();
-
-                if (kq == true)
-                {
-                    MessageBox.Show(
-                        "Xóa độc giả thành công!",
-                        "Thông báo",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Information);
-
-                    HienThiDanhSachDocGia();
-                }
-                else
-                {
-                    MessageBox.Show(
-                        "Xóa độc giả không thành công!");
-                }
-
-                btnSua.Enabled = false;
-                btnXoa.Enabled = false;
-
-                vt = -1;
-            }
-        }
-
         private void btnThoat_Click(object sender, EventArgs e)
         {
                 DialogResult result =
@@ -431,120 +274,6 @@ namespace dangnhap
             if (result == DialogResult.Yes)
             {
                 this.Close();
-            }
-        }
-
-        private void btnHuy_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            string tuKhoa = txtTKMaDG.Text.Trim();
-
-            if (tuKhoa == "")
-            {
-                MessageBox.Show(
-                    "Vui lòng nhập mã hoặc tên độc giả cần tìm!",
-                    "Thông báo",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
-
-                txtTKMaDG.Focus();
-
-                return;
-            }
-
-            sqlCon = MoKetNoi();
-
-            if (sqlCon == null)
-                return;
-
-            try
-            {
-                string query = "";
-
-                // Tìm theo mã
-                if (radMaDG.Checked)
-                {
-                    query ="SELECT * FROM tblDocGia " + "WHERE MaDG LIKE @TuKhoa";
-                }
-
-                // Tìm theo tên
-                else if (radTenDG.Checked)
-                {
-                    query ="SELECT * FROM tblDocGia " + "WHERE TenDG LIKE @TuKhoa";
-                }
-
-                else
-                {
-                    MessageBox.Show(
-                        "Vui lòng chọn tiêu chí tìm kiếm!");
-
-                    return;
-                }
-
-
-                SqlCommand cmd =
-                    new SqlCommand(query, sqlCon);
-
-                cmd.Parameters.AddWithValue(
-                    "@TuKhoa",
-                    "%" + tuKhoa + "%");
-
-
-                // Cập nhật lại dt và da
-                // để sau tìm kiếm vẫn Sửa/Xóa được
-                dt = new DataTable();
-
-                da = new SqlDataAdapter(cmd);
-
-                da.Fill(dt);
-
-                dgvDanhsachDG.DataSource = dt;
-
-
-                // Cấu hình DataGridView
-                dgvDanhsachDG.SelectionMode =
-                    DataGridViewSelectionMode.FullRowSelect;
-
-                dgvDanhsachDG.ReadOnly = true;
-
-                dgvDanhsachDG.AllowUserToAddRows = false;
-
-
-                if (dt.Rows.Count == 0)
-                {
-                    MessageBox.Show(
-                        "Không tìm thấy độc giả!",
-                        "Thông báo",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Information);
-
-                    vt = -1;
-
-                    btnSua.Enabled = false;
-                    btnXoa.Enabled = false;
-                }
-                else
-                {
-                    dgvDanhsachDG.ClearSelection();
-
-                    vt = -1;
-
-                    btnSua.Enabled = false;
-                    btnXoa.Enabled = false;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(
-                    "Lỗi tìm kiếm: "
-                    + ex.Message,
-                    "Thông báo lỗi",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
             }
         }
         private void dgvDanhsachDG_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -774,7 +503,61 @@ namespace dangnhap
 
         private void btnLuu_Click_1(object sender, EventArgs e)
         {
+            string maDG = txtMaDG.Text.Trim();
+            string tenDG = txtTenDG.Text.Trim();
+            string gioiTinh = cbbGioiTinh.Text.Trim();
+            string ngaySinh = dtpNgaySinh.Value.ToString("yyyy-MM-dd");
+            string sdt = txtSĐT.Text.Trim();
+            string diaChi = txtDiaChi.Text.Trim();
 
+            // Kiểm tra các ô trống cơ bản...
+            if (maDG == "") { MessageBox.Show("Vui lòng nhập mã độc giả!"); txtMaDG.Focus(); return; }
+            if (tenDG == "") { MessageBox.Show("Vui lòng nhập tên độc giả!"); txtTenDG.Focus(); return; }
+            if (sdt == "") { MessageBox.Show("Vui lòng nhập số điện thoại!"); txtSĐT.Focus(); return; }
+            if (diaChi == "") { MessageBox.Show("Vui lòng nhập địa chỉ!"); txtDiaChi.Focus(); return; }
+
+            List<string> docGia = new List<string>();
+            docGia.Add(maDG);
+            docGia.Add(tenDG);
+            docGia.Add(gioiTinh);
+            docGia.Add(ngaySinh);
+            docGia.Add(sdt);
+            docGia.Add(diaChi);
+
+            // 1. Trường hợp THÊM MỚI
+            if (luuChon == 1)
+            {
+                bool kq = ThemMoiDocGia(docGia);
+                if (kq == true)
+                {
+                    MessageBox.Show("Thêm độc giả thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    HienThiDanhSachDocGia();
+                }
+                else
+                {
+                    MessageBox.Show("Thêm độc giả không thành công!");
+                }
+            }
+            // 2. Trường hợp SỬA THÔNG TIN (Đã được bổ sung đầy đủ ở đây)
+            else if (luuChon == 2)
+            {
+                bool kq = ChinhSuaTTDocGia(docGia);
+                if (kq == true)
+                {
+                    MessageBox.Show("Sửa thông tin độc giả thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    HienThiDanhSachDocGia();
+                }
+                else
+                {
+                    MessageBox.Show("Sửa thông tin không thành công!");
+                }
+            }
+
+            // Reset trạng thái sau khi lưu
+            gbThongtinchitiet.Enabled = false;
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
+            luuChon = 0;
         }
     }
 }

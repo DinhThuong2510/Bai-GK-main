@@ -19,7 +19,7 @@ namespace dangnhap
             InitializeComponent();
         }
         // Khai báo chuỗi kết nối
-        string strCon = @"Data Source=embemilo;Initial Catalog=QuanLySach;Integrated Security=True;Encrypt=False";
+        string strCon = @"Data Source=.\SQLEXPRESS;Initial Catalog=QuanLySach;Integrated Security=True;Encrypt=False";
 
         // Khai báo đối tượng kết nối
         SqlConnection sqlCon = null;

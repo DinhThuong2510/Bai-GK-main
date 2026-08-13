@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Bai-GK-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{672CF133-4B6D-4AF1-9399-4ED760FFED5C}|dangnhap\\dangnhap.csproj|e:\\bai-gk-main\\dangnhap\\muonsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{672CF133-4B6D-4AF1-9399-4ED760FFED5C}|dangnhap\\dangnhap.csproj|solutionrelative:dangnhap\\muonsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MuonSach.cs [Design]",
+              "DocumentMoniker": "E:\\Bai-GK-main\\dangnhap\\MuonSach.cs",
+              "RelativeDocumentMoniker": "dangnhap\\MuonSach.cs",
+              "ToolTip": "E:\\Bai-GK-main\\dangnhap\\MuonSach.cs [Design]",
+              "RelativeToolTip": "dangnhap\\MuonSach.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T22:01:04.89Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
