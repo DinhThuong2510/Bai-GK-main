@@ -36,6 +36,11 @@ C:\Users\nguye\Downloads\Bai-GK-main\Bai-GK-main\dangnhap\dangnhap\obj\Debug\dan
 C:\Users\nguye\Downloads\Bai-GK-main\Bai-GK-main\dangnhap\dangnhap\obj\Debug\dangnhap.TraSach.resources
 C:\Users\nguye\Downloads\Bai-GK-main\Bai-GK-main\dangnhap\dangnhap\obj\Debug\dangnhap.csproj.GenerateResource.cache
 C:\Users\nguye\Downloads\Bai-GK-main\Bai-GK-main\dangnhap\dangnhap\obj\Debug\dangnhap.csproj.CoreCompileInputs.cache
+E:\Bai-GK-main\dangnhap\bin\Debug\Database1.mdf
+E:\Bai-GK-main\dangnhap\bin\Debug\Database1_log.ldf
+E:\Bai-GK-main\dangnhap\bin\Debug\dangnhap.exe.config
+E:\Bai-GK-main\dangnhap\bin\Debug\dangnhap.exe
+E:\Bai-GK-main\dangnhap\bin\Debug\dangnhap.pdb
 E:\Bai-GK-main\dangnhap\obj\Debug\dangnhap.csproj.AssemblyReference.cache
 E:\Bai-GK-main\dangnhap\obj\Debug\dangnhap.DangKy.resources
 E:\Bai-GK-main\dangnhap\obj\Debug\dangnhap.DangNhap.resources
@@ -48,10 +53,5 @@ E:\Bai-GK-main\dangnhap\obj\Debug\dangnhap.ThongKe.resources
 E:\Bai-GK-main\dangnhap\obj\Debug\dangnhap.TraSach.resources
 E:\Bai-GK-main\dangnhap\obj\Debug\dangnhap.csproj.GenerateResource.cache
 E:\Bai-GK-main\dangnhap\obj\Debug\dangnhap.csproj.CoreCompileInputs.cache
-E:\Bai-GK-main\dangnhap\bin\Debug\Database1.mdf
-E:\Bai-GK-main\dangnhap\bin\Debug\Database1_log.ldf
-E:\Bai-GK-main\dangnhap\bin\Debug\dangnhap.exe.config
-E:\Bai-GK-main\dangnhap\bin\Debug\dangnhap.exe
-E:\Bai-GK-main\dangnhap\bin\Debug\dangnhap.pdb
 E:\Bai-GK-main\dangnhap\obj\Debug\dangnhap.exe
 E:\Bai-GK-main\dangnhap\obj\Debug\dangnhap.pdb
