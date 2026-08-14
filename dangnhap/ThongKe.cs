@@ -63,7 +63,7 @@ namespace dangnhap
                     sqlCon.Open();
                     string query = "SELECT * FROM tblPhieuMuon WHERE NgayMuon >= @TuNgay AND NgayMuon <= @DenNgay";
 
-                    // Khởi tạo SqlCommand trước để gán tham số
+                    // Khởi tạo SqlCommand để gán tham số
                     using (SqlCommand cmd = new SqlCommand(query, sqlCon))
                     {
                         // Gán giá trị ngày bắt đầu (lấy từ 00:00:00) và ngày kết thúc (lấy đến cuối ngày 23:59:59)

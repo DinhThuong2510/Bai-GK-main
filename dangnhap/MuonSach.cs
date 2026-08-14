@@ -51,7 +51,7 @@ namespace dangnhap
                 DataGridViewRow row = dgvDanhSach.Rows[e.RowIndex];
 
                 // Lấy giá trị nằm ở cột "Mã Sách" của dòng đó, ép sang kiểu chuỗi (string) 
-                // và nhét nó vào ô TextBox txtMaSach
+                // và đưa nó vào ô TextBox txtMaSach
                 txtMaSach.Text = row.Cells["Mã Sách"].Value.ToString();
             }
         }
@@ -183,7 +183,7 @@ namespace dangnhap
             dtpNgayMuon.Value = DateTime.Now;
             dtpHanTra.Value = DateTime.Now;
 
-            // Đưa con trỏ chuột nhấp nháy về lại ô Mã Phiếu Mượn cho tiện
+            // Đưa con trỏ chuột nhấp nháy về lại ô Mã Phiếu Mượn
             txtMaPM.Focus();
         }
 

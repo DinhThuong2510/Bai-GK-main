@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "E:\\Bai-GK-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{672CF133-4B6D-4AF1-9399-4ED760FFED5C}|dangnhap\\dangnhap.csproj|e:\\bai-gk-main\\dangnhap\\muonsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{672CF133-4B6D-4AF1-9399-4ED760FFED5C}|dangnhap\\dangnhap.csproj|solutionrelative:dangnhap\\muonsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{672CF133-4B6D-4AF1-9399-4ED760FFED5C}|dangnhap\\dangnhap.csproj|e:\\bai-gk-main\\dangnhap\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{672CF133-4B6D-4AF1-9399-4ED760FFED5C}|dangnhap\\dangnhap.csproj|solutionrelative:dangnhap\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{672CF133-4B6D-4AF1-9399-4ED760FFED5C}|dangnhap\\dangnhap.csproj|e:\\bai-gk-main\\dangnhap\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{672CF133-4B6D-4AF1-9399-4ED760FFED5C}|dangnhap\\dangnhap.csproj|solutionrelative:dangnhap\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{672CF133-4B6D-4AF1-9399-4ED760FFED5C}|dangnhap\\dangnhap.csproj|e:\\bai-gk-main\\dangnhap\\trasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{672CF133-4B6D-4AF1-9399-4ED760FFED5C}|dangnhap\\dangnhap.csproj|solutionrelative:dangnhap\\trasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{672CF133-4B6D-4AF1-9399-4ED760FFED5C}|dangnhap\\dangnhap.csproj|e:\\bai-gk-main\\dangnhap\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{672CF133-4B6D-4AF1-9399-4ED760FFED5C}|dangnhap\\dangnhap.csproj|solutionrelative:dangnhap\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{672CF133-4B6D-4AF1-9399-4ED760FFED5C}|dangnhap\\dangnhap.csproj|e:\\bai-gk-main\\dangnhap\\muonsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{672CF133-4B6D-4AF1-9399-4ED760FFED5C}|dangnhap\\dangnhap.csproj|solutionrelative:dangnhap\\muonsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,38 +35,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MuonSach.cs [Design]",
-              "DocumentMoniker": "E:\\Bai-GK-main\\dangnhap\\MuonSach.cs",
-              "RelativeDocumentMoniker": "dangnhap\\MuonSach.cs",
-              "ToolTip": "E:\\Bai-GK-main\\dangnhap\\MuonSach.cs [Design]",
-              "RelativeToolTip": "dangnhap\\MuonSach.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T22:12:47.038Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "DangNhap.cs [Design]",
               "DocumentMoniker": "E:\\Bai-GK-main\\dangnhap\\DangNhap.cs",
               "RelativeDocumentMoniker": "dangnhap\\DangNhap.cs",
               "ToolTip": "E:\\Bai-GK-main\\dangnhap\\DangNhap.cs [Design]",
               "RelativeToolTip": "dangnhap\\DangNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T22:12:43.139Z",
+              "WhenOpened": "2026-08-14T01:24:06.351Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DangKy.cs [Design]",
-              "DocumentMoniker": "E:\\Bai-GK-main\\dangnhap\\DangKy.cs",
-              "RelativeDocumentMoniker": "dangnhap\\DangKy.cs",
-              "ToolTip": "E:\\Bai-GK-main\\dangnhap\\DangKy.cs [Design]",
-              "RelativeToolTip": "dangnhap\\DangKy.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "TraSach.cs",
+              "DocumentMoniker": "E:\\Bai-GK-main\\dangnhap\\TraSach.cs",
+              "RelativeDocumentMoniker": "dangnhap\\TraSach.cs",
+              "ToolTip": "E:\\Bai-GK-main\\dangnhap\\TraSach.cs",
+              "RelativeToolTip": "dangnhap\\TraSach.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAIwDsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T22:11:03.121Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-08-14T01:23:45.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ThongKe.cs",
+              "DocumentMoniker": "E:\\Bai-GK-main\\dangnhap\\ThongKe.cs",
+              "RelativeDocumentMoniker": "dangnhap\\ThongKe.cs",
+              "ToolTip": "E:\\Bai-GK-main\\dangnhap\\ThongKe.cs",
+              "RelativeToolTip": "dangnhap\\ThongKe.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAIwEUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T01:23:25.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MuonSach.cs",
+              "DocumentMoniker": "E:\\Bai-GK-main\\dangnhap\\MuonSach.cs",
+              "RelativeDocumentMoniker": "dangnhap\\MuonSach.cs",
+              "ToolTip": "E:\\Bai-GK-main\\dangnhap\\MuonSach.cs",
+              "RelativeToolTip": "dangnhap\\MuonSach.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAADwv7oAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T01:22:13.187Z",
+              "EditorCaption": ""
             }
           ]
         }
